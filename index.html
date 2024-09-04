@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Title of the webpage -->
+    <title>Daily News</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="main-nav container flex">
+            <!-- Logo and Home Link -->
+            <a href="#">
+                <img class="logo" src="images/img1.jpg" alt="Site Logo">
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="nav-link">
+                <ul class="flex" id="menuList">
+                    <li class="hover-link nav-item" id="Latest-News" onclick="onNavItemClick('Latest-News')">Latest News</li>
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link nav-item"><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" placeholder="Search News Here..." id="search-input">
+                <button id="search-button">Search</button>
+            </div>
+            
+            <!-- Hamburger Menu Icon for Responsive Navigation -->
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="blog-container" class="obj-width">
+        <!-- Example News Card -->
+        <div class="blog-card">
+            <img src="https://placehold.co/600x400" alt="News">
+            <h3>This is news Title</h3>
+            <h6>end Eadget 23/03/2023</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsum est dolore, harum ipsa corruptiautem.</p>
+        </div>
+    </main>
+    
+    <!-- FontAwesome Script for Icons -->
+    <script src="https://kit.fontawesome.com/2ea7d5da78.js" crossorigin="anonymous"></script>
+
+    <!-- Link to External JavaScript File -->
+    <script src="javascript.js"></script>
+</body>
+
+</html>
